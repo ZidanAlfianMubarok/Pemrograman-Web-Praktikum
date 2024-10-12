@@ -1,0 +1,15 @@
+    .carousel-inner img {
+        height: 300px; /* You can adjust this as needed */
+        object-fit: cover; /* Ensures the image fits within the container */
+    }
+
+    /* Glowing text effect for About Me */
+    .glow-text {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #ff0000;
+        justify-content: center;
+        text-shadow: 0 0 10px rgba(63, 47, 47, 0.8), 
+                    0 0 20px rgba(121, 184, 224, 0.6), 
+                    0 0 30px rgba(189, 9, 141, 0.5);
+    }

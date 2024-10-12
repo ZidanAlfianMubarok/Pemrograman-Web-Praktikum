@@ -1,0 +1,53 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="text-center">Edit Profile</h2>
+                </div>
+
+                <div class="card-body">
+                    <form method="POST">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input name="username" type="text" class="form-control" id="username" value="{{ user[1] }}" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input name="email" type="email" class="form-control" id="email" value="{{ user[3] }}" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input name="password" type="password" class="form-control" id="password" value="{{ user[2] }}" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Alamat</label>
+                            <input name="address" type="text" class="form-control" id="address" value="{{ user[4] }}" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Nomor Telepon</label>
+                            <input name="phone" type="text" class="form-control" id="phone" value="{{ user[5] }}" required>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary mt-4">Save Changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

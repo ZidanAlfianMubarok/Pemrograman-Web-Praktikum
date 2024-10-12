@@ -1,0 +1,79 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+    <title>Halaman Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="text-center">Halaman Register</h2>
+                </div>
+
+                <div class="card-body">
+                    <form method="POST">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input name="username" type="text" class="form-control" id="username" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="inpEmail" class="form-label">Email address</label>
+                            <input name="inpEmail" type="email" class="form-control" id="inpEmail" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="inpPass" class="form-label">Password</label>
+                            <input name="inpPass" type="password" class="form-control" id="inpPass" required>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary mt-4">Register</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center">
+                    <p>Sudah punya akun? <a href="{{ url_for('login') }}">Login di sini</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="successModalLabel">Registration Successful</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                You have successfully registered! Please log in.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Skrip untuk menampilkan modal -->
+<script>
+    $(document).ready(function() {
+        {% if success %}
+            $('#successModal').modal('show');  
+        {% endif %}
+    });
+</script>
+
+{% endblock %}

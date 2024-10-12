@@ -1,0 +1,107 @@
+body {
+    background: url('https://4kwallpapers.com/images/walls/thumbs_3t/16795.png') no-repeat center center fixed; 
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.table {
+    backdrop-filter: blur(5px); /* Efek kaca buram */
+    background-color: rgba(255, 255, 255, 0.5); /* Warna latar belakang dengan transparansi */
+    border-radius: 10px; /* Sudut membulat */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan untuk kedalaman */
+    overflow: hidden; /* Untuk memastikan sudut membulat berfungsi */
+}
+
+.table th, .table td {
+    padding: 15px; /* Padding sel */
+    text-align: center; /* Pusatkan teks */
+}
+
+.table th {
+    background-color: rgba(255, 255, 255, 0.7); /* Warna header dengan transparansi */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.3); /* Warna striping dengan transparansi */
+}
+.swal2-input {
+    border: 1px solid #007bff; /* Warna border biru */
+    border-radius: 5px; /* Sudut membulat */
+    padding: 10px; /* Padding dalam input */
+    margin: 5px 0; /* Margin antara input */
+    width: calc(100% - 20px); /* Lebar input */
+}
+
+/* Gaya untuk SweetAlert */
+.swal2-title {
+    color: #007bff; /* Warna judul biru */
+    font-size: 1.5rem; /* Ukuran font judul */
+    margin-bottom: 10px; /* Margin bawah judul */
+}
+
+.swal2-confirm {
+    background-color: #007bff; /* Warna tombol konfirmasi biru */
+    border-color: #007bff; /* Warna border tombol konfirmasi */
+}
+
+.swal2-cancel {
+    background-color: #dc3545; /* Warna tombol batal merah */
+    border-color: #dc3545; /* Warna border tombol batal */
+}
+
+.swal2-input:focus {
+    border-color: #0056b3; /* Warna border saat fokus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Efek bayangan saat fokus */
+}
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.my-4 {
+    margin-top: 1.5rem; 
+    margin-bottom: 1.5rem; 
+}
+
+
+h1 {
+    color: #fff; /* Warna tulisan */
+    text-align: center;
+    font-size: 2.5rem; /* Ukuran font */
+    position: relative; /* Untuk efek gelembung */
+    animation: glow 1.5s infinite; /* Efek glow */
+}
+
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #00eaff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff;
+    }
+    50% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #00eaff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff;
+    }
+}
+
+/* Efek gelembung saat hover */
+h1:hover {
+    animation: bubble 0.5s ease-in-out; /* Menambahkan efek gelembung */
+}
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Mengangkat tulisan */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

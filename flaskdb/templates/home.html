@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Koneksi Flask dan MySQL</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+    
+    <!-- SweetAlert CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Koneksi Flask dan MySQL</h1>
+
+        <!-- Tabel Bootstrap -->
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Username</th>
+                        <th scope="col">Password</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Alamat</th>
+                        <th scope="col">Nomor Telepon</th>
+                        <th scope="col">Aksi</th>
+                    </tr>
+                </thead>
+
+                <!-- Looping baris data -->
+                <tbody>
+                    {% for row in users %}
+                    <tr>
+                        <th scope="row">{{ row[0] }}</th>
+                        <td>{{ row[1] }}</td>
+                        <td>{{ row[2] }}</td>
+                        <td>{{ row[3] }}</td>
+                        <td>{{ row[4] }}</td>
+                        <td>{{ row[5] }}</td>
+                        <td>
+                            <button class="btn btn-warning" onclick="editUser({{ row[0] }})">Edit</button>
+                            <button class="btn btn-danger" onclick="deleteUser({{ row[0] }})">Hapus</button>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Tombol tambah data di tengah -->
+        <div class="d-flex justify-content-center my-4">
+            <button class="btn btn-success" onclick="addUser()">Tambah Data</button>
+        </div>
+    </div>
+
+    <!-- SweetAlert JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Panggil file script.js -->
+    <script src="static/script.js"></script>
+</body>
+
+</html>
