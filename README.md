@@ -33,7 +33,7 @@ Di bawah ini adalah struktur dari setiap bab yang disertai dengan file latihan d
 - **7.4 Latihan**: [restflask](./restflask)
 - **7.5 Tugas**: [restapi](./restapi)
 
-### **BAB VIII**: Proyek Akhir — Aplikasi Toko Sederhana
+### **BAB VIII**: Konfigurasi Database DanMigration Rest API Pada Flask Python
 - **8.4 Latihan**: [pytoko](./pytoko)
 - **8.5 Tugas**: [pytoko](./pytoko)
 
