@@ -1,9 +1,17 @@
 
 ---
 
-# Pemrograman Web Praktikum
+# 🚀 Pemrograman Web PraktikuM̷̧̢̢̛͎̭͖̰͕̖̠̥̮̗̗̬̳̪̠͉͉̖̬͕͇̯͕̻̝͓͓̩̤̲̼͎͆̈́̂͂͊́̑̒̽̾̈́̅̈̐͊̿̈̂͌̈́̏̈́̅͗̎̑̅̈́̽̓̍̈́͐̐͛̿̈́̅́̈́͊͘̕̚͜͝͠͠ͅ
+
+![GitHub stars](https://img.shields.io/github/stars/ZidanAlfianMubarok/Pemrograman-Web-Praktikum?style=social)
+![GitHub forks](https://img.shields.io/github/forks/ZidanAlfianMubarok/Pemrograman-Web-Praktikum?style=social)
+![GitHub issues](https://img.shields.io/github/issues/ZidanAlfianMubarok/Pemrograman-Web-Praktikum)
 
 Selamat datang di repository **Pemrograman Web Praktikum**! Repository ini berisi berbagai latihan dan tugas pemrograman web yang diimplementasikan menggunakan **Flask**, **Python**, dan **MySQL**.
+
+<div align="center">
+    <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGFyeXg4c3hyMWY3MGI1dTRnM2tpMTM4bHR6eGlrMTN2MDF5Ync3bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rhZr8u3cvxe0ksf1ej/giphy.gif" alt="Web Development GIF" width="300"/>
+</div>
 
 ## 📂 Struktur Bab dan Kode
 
