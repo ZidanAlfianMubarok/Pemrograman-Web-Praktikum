@@ -10,7 +10,7 @@ app.secret_key = '!@#$'  # Ganti dengan kunci yang lebih aman
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = 'sidakaton'
-app.config['MYSQL_DB'] = 'flaskmysql'
+app.config['MYSQL_DB'] = 'sessionmysql'
 
 mysql = MySQL(app)
 
@@ -87,15 +87,23 @@ def edit_profile():
             # Get data from form
             new_username = request.form['username']
             new_email = request.form['email']
-            new_password = request.form['password']
+            new_password = request.form['password']  # New password from form
             new_address = request.form['address']
             new_phone = request.form['phone']
 
-            # Update the user data in the database
             cur = mysql.connection.cursor()
-            cur.execute("""
-                UPDATE users SET username=%s, email=%s, password=%s, alamat=%s, nomor_telepon=%s WHERE username=%s
-            """, (new_username, new_email, new_password, new_address, new_phone, username))
+
+            if new_password:  # Only hash and update password if a new one is provided
+                hashed_password = bcrypt.hashpw(new_password.encode('utf-8'), bcrypt.gensalt())
+                cur.execute("""
+                    UPDATE users SET username=%s, email=%s, password=%s, address=%s, phone=%s WHERE username=%s
+                """, (new_username, new_email, hashed_password, new_address, new_phone, username))
+            else:
+                # Do not update password if new password is not provided
+                cur.execute("""
+                    UPDATE users SET username=%s, email=%s, address=%s, phone=%s WHERE username=%s
+                """, (new_username, new_email, new_address, new_phone, username))
+
             mysql.connection.commit()
             cur.close()
 
@@ -108,6 +116,7 @@ def edit_profile():
         return render_template('edit_profile.html', user=user_data)
     else:
         return redirect(url_for('login'))
+
 
 # Route home
 @app.route('/home')
