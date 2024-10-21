@@ -41,11 +41,11 @@ Di bawah ini adalah struktur dari setiap bab yang disertai dengan file latihan d
 - **7.4 Latihan**: [restflask](./restflask)
 - **7.5 Tugas**: [restapi](./restapi)
 
-### **BAB VIII**: Konfigurasi Database DanMigration Rest API Pada Flask Python
+### **BAB VIII**: Konfigurasi Database Dan Migration Rest API Pada Flask Python
 - **8.4 Latihan**: [pytoko](./pytoko)
 - **8.5 Tugas**: [pytoko](./pytoko)
 
-### **BAB IX**: Konfigurasi Database DanMigration Rest API Pada Flask Python
+### **BAB IX**: Creat, Read, Update, Delete Rest API Pada Flask Python
 - **9.4 Latihan**: [pytokoAPI](./pytokoAPI)
 - **9.5 Tugas**: [pytokoAPI](./pytokoAPI)
 
