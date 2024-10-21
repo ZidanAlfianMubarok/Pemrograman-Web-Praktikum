@@ -45,6 +45,10 @@ Di bawah ini adalah struktur dari setiap bab yang disertai dengan file latihan d
 - **8.4 Latihan**: [pytoko](./pytoko)
 - **8.5 Tugas**: [pytoko](./pytoko)
 
+### **BAB IX**: Konfigurasi Database DanMigration Rest API Pada Flask Python
+- **9.4 Latihan**: [pytoko](./pytokoAPI)
+- **9.5 Tugas**: [pytoko](./pytokoAPI)
+
 ---
 
 ## 🔧 Teknologi yang Digunakan
