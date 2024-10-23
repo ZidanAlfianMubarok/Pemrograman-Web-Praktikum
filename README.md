@@ -49,6 +49,10 @@ Di bawah ini adalah struktur dari setiap bab yang disertai dengan file latihan d
 - **9.4 Latihan**: [pytokoAPI](./pytokoAPI)
 - **9.5 Tugas**: [pytokoAPI](./pytokoAPI)
 
+### **BAB X** : Login dan penerapan Rest API JWT (JASON WEB TOKEN) Pada Flask Python
+- **10.4 Latihan**: [pytokoAPI](./pytokoAPI)
+- **10.5 Tugas**: [pytokoAPI](./pytokoAPI)
+
 ---
 
 ## 🔧 Teknologi yang Digunakan
