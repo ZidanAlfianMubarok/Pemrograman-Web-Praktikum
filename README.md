@@ -84,8 +84,8 @@ Di bawah ini adalah struktur dari setiap bab yang disertai dengan file latihan d
 
 ## 🤝 Kontribusi
 
-DO NOT ACCEPT CONTRIBUTIONS ONLY ACCEPT FEEDBACK 🙋🏻‍♂️
+SORRY DOES NOT ACCEPT CONTRIBUTIONS ONLY ACCEPT FEEDBACK🙋🏻‍♂️
 ---
 
-Repository ini diPeruntukkan untuk matkul **Pemrograman Web praktik II**! 🎉
+⚠️ Repository ini diPeruntukkan untuk matkul **Pemrograman Web praktik II**! 🎉
 
