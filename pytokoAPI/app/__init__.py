@@ -2,10 +2,14 @@ from flask import Flask
 from config import Config
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
+from flask_jwt_extended import JWTManager
+
+
 
 # Initialize Flask app
 app = Flask(__name__)
 
+jwt = JWTManager(app)  # Inisialisasi JWT
 # Load configuration
 app.config.from_object(Config)
 

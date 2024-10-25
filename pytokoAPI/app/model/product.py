@@ -3,7 +3,7 @@ from datetime import datetime
 
 class Product(db.Model):
     id = db.Column(db.BigInteger, primary_key=True, autoincrement=True)
-    name = db.Column(db.String(230), nullable=False)
+    name = db.Column(db.String(255), nullable=False)
     price = db.Column(db.Float, nullable=False)
     category_id = db.Column(db.BigInteger, db.ForeignKey('category_product.id'), nullable=False)
     description = db.Column(db.Text, nullable=True)

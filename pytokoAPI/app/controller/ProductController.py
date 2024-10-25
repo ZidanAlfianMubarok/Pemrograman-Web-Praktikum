@@ -1,7 +1,9 @@
 from flask import request
 from app.model.product import Product
 from app import response, db
+from flask_jwt_extended import jwt_required
 
+@jwt_required()  # Protect index with JWT
 def index():
     try:
         products = Product.query.all()
@@ -23,6 +25,7 @@ def transform(products):
         })
     return array
 
+@jwt_required()  # Protect store with JWT
 def store():
     try:
         name = request.json['name']
@@ -39,6 +42,7 @@ def store():
         print(e)
         return response.badRequest([], 'An error occurred while creating product.')
 
+@jwt_required()  # Protect update with JWT
 def update(id):
     try:
         product = Product.query.get(id)
@@ -62,6 +66,7 @@ def update(id):
         print(e)
         return response.badRequest([], 'An error occurred while updating product.')
 
+@jwt_required()  # Protect delete with JWT
 def delete(id):
     try:
         product = Product.query.get(id)
@@ -75,3 +80,22 @@ def delete(id):
     except Exception as e:
         print(e)
         return response.badRequest([], 'An error occurred while deleting product.')
+
+@jwt_required()  # Protect show with JWT
+def show(id):
+    try:
+        product = Product.query.get(id)
+        if not product:
+            return response.badRequest([], 'Product not found.')
+
+        data = {
+            'id': product.id,
+            'name': product.name,
+            'price': product.price,
+            'category_id': product.category_id,
+            'description': product.description
+        }
+        return response.ok(data, "")
+    except Exception as e:
+        print(e)
+        return response.badRequest([], 'An error occurred while retrieving product.')
