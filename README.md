@@ -41,9 +41,17 @@ Di bawah ini adalah struktur dari setiap bab yang disertai dengan file latihan d
 - **7.4 Latihan**: [restflask](./restflask)
 - **7.5 Tugas**: [restapi](./restapi)
 
-### **BAB VIII**: Konfigurasi Database DanMigration Rest API Pada Flask Python
+### **BAB VIII**: Konfigurasi Database Dan Migration Rest API Pada Flask Python
 - **8.4 Latihan**: [pytoko](./pytoko)
 - **8.5 Tugas**: [pytoko](./pytoko)
+
+### **BAB IX**: Creat, Read, Update, Delete Rest API Pada Flask Python
+- **9.4 Latihan**: [pytokoAPI](./pytokoAPI)
+- **9.5 Tugas**: [pytokoAPI](./pytokoAPI)
+
+### **BAB X** : Login dan penerapan Rest API JWT (JASON WEB TOKEN) Pada Flask Python
+- **10.4 Latihan**: [pytokoAPI](./pytokoAPI)
+- **10.5 Tugas**: [pytokoAPI](./pytokoAPI)
 
 ---
 
@@ -76,8 +84,8 @@ Di bawah ini adalah struktur dari setiap bab yang disertai dengan file latihan d
 
 ## 🤝 Kontribusi
 
-DO NOT ACCEPT CONTRIBUTIONS ONLY ACCEPT FEEDBACK 🙋🏻‍♂️
+SORRY DOES NOT ACCEPT CONTRIBUTIONS ONLY ACCEPT FEEDBACK🙋🏻‍♂️
 ---
 
-Repository ini diPeruntukkan untuk matkul **Pemrograman Web praktik II**! 🎉
+⚠️ Repository ini diPeruntukkan untuk matkul **Pemrograman Web praktik II**! 🎉
 
