@@ -54,8 +54,8 @@ Di bawah ini adalah struktur dari setiap bab yang disertai dengan file latihan d
 - **10.5 Tugas**: [pytokoAPI](./pytokoAPI)
 
 ### **BAB XI** : Proyek Front-End dan Back-End rekayasa web
-- **11.4 Latihan**: [PusakaMart](./PusakaMart)
-- **11.5 Tugas**: [PusakaMart](./PusakaMart)
+- **11.4 Implementasi Desain Sistem**: [PusakaMart](./PusakaMart)
+- **11.5 Kasus Proyek**: [PusakaMart](./PusakaMart)
 
 
 ---
