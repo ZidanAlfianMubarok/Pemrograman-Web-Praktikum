@@ -1,0 +1,16 @@
+/* styles.css */
+
+/* CSS untuk canvas partikel */
+#particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Agar canvas di belakang konten lainnya */
+}
+
+/* CSS untuk efek border menyala */
+.border-glow {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,48 @@
+body {
+    background-color: #f1f2f5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.ios-card {
+        background-color: rgba(255, 255, 255, 0.721); /* Warna putih dengan transparansi 80% */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        border: 4px solid transparent; /* Border transparan untuk menambah efek */
+        position: relative;
+        animation: glow 1.5s infinite alternate; /* Menambahkan animasi glowing */
+    }
+    @keyframes glow {
+        0% {
+            border-color: rgba(255, 0, 0, 0.7); /* Warna merah */
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Glow merah */
+        }
+        100% {
+            border-color: rgba(0, 0, 255, 0.7); /* Warna biru */
+            box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Glow biru */
+        }
+    }
+.ios-icon {
+    color: #007aff;
+}
+.ios-button {
+    background-color: #007aff;
+    color: white;
+    font-weight: 500;
+    border-radius: 12px;
+    padding: 10px 16px;
+    transition: all 0.3s ease;
+}
+.ios-button:hover {
+    background-color: #005bb5;
+}
+
+    
+    /* Gaya Partikel */
+    .particles {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: -1;
+    }

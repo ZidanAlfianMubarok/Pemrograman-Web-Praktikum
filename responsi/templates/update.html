@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Produk</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* CSS untuk canvas partikel */
+        #particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Agar canvas di belakang konten lainnya */
+        }
+        /* CSS untuk efek border menyala */
+        .border-glow {
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-purple-600 min-h-screen flex items-center justify-center relative">
+
+    <canvas id="particles"></canvas>
+
+    <div class="bg-white bg-opacity-50 shadow-lg rounded-lg p-8 w-full max-w-lg relative z-10 border-4 border-blue-500 border-glow">
+        <h1 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Edit Produk</h1>
+        
+        <form action="" method="POST" class="space-y-4">
+            <div>
+                <label for="nama_barang" class="block text-sm font-medium text-gray-700">Nama Barang</label>
+                <input type="text" id="nama_barang" name="nama_barang" value="{{ product.nama_barang }}" 
+                       class="mt-1 p-2 border border-gray-300 rounded-lg w-full focus:ring-blue-500 focus:border-blue-500" required>
+            </div>
+            
+            <div>
+                <label for="harga" class="block text-sm font-medium text-gray-700">Harga</label>
+                <input type="number" id="harga" name="harga" value="{{ product.harga }}" 
+                       class="mt-1 p-2 border border-gray-300 rounded-lg w-full focus:ring-blue-500 focus:border-blue-500" required>
+            </div>
+            
+            <div>
+                <label for="stok" class="block text-sm font-medium text-gray-700">Stok</label>
+                <input type="number" id="stok" name="stok" value="{{ product.stok }}" 
+                       class="mt-1 p-2 border border-gray-300 rounded-lg w-full focus:ring-blue-500 focus:border-blue-500" required>
+            </div>
+            
+            <div>
+                <label for="kd_supplier" class="block text-sm font-medium text-gray-700">Kode Supplier</label>
+                <input type="text" id="kd_supplier" name="kd_supplier" value="{{ product.kd_supplier }}" 
+                       class="mt-1 p-2 border border-gray-300 rounded-lg w-full focus:ring-blue-500 focus:border-blue-500" required>
+            </div>
+
+            <div class="flex justify-between">
+                <button type="submit" 
+                        class="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-200">
+                    Update Produk
+                </button>
+                <a href="/" 
+                   class="w-full ml-2 bg-gray-300 text-gray-800 py-2 rounded-lg font-semibold hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 transition duration-200 text-center">
+                    Batal
+                </a>
+            </div>
+        </form>
+    </div>
+    <script src="static/js/update.js"></script>
+</body>
+</html>
