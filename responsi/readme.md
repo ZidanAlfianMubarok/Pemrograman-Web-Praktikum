@@ -1,6 +1,6 @@
 
 
-<h1>Aplikasi Statistik Barang Masuk</h1>
+<h1>Aplikasi Kelola Barang</h1>
 
 <p>Aplikasi ini adalah sebuah sistem berbasis web menggunakan <strong>Flask</strong> dan <strong>MySQL</strong> untuk mengelola data barang masuk. Aplikasi mencakup fitur <strong>CRUD</strong> dan tampilan statistik barang masuk secara harian dan bulanan.</p>
 
@@ -12,12 +12,20 @@
 </ul>
 
 <h2>Persyaratan</h2>
-<ul>
-    <li>Python 3.12.1 atau di atasnya </li>
-    <li>MySQL</li>
-    <li>Virtualenv</li>
+<ul style="list-style-type: none; padding: 0;">
+    <li style="display: flex; align-items: center; margin-bottom: 10px;">
+        <img src="https://www.python.org/static/img/python-logo@2x.png" alt="Python Logo" style="width: 80px; height: auto; margin-right: 10px;">
+        <span style="flex: 1;">3.12.1 atau di atasnya</span>
+    </li>
+    <li style="display: flex; align-items: center; margin-bottom: 10px;">
+        <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL Logo" style="width: 40px; height: auto; margin-right: 10px;">
+        <span style="flex: 1;">MySQL</span>
+    </li>
+    <li style="display: flex; align-items: center; margin-bottom: 10px;">
+        <img src="https://th.bing.com/th?id=ODLS.d766d530-29c4-4ac0-baec-2097804c4549&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2" alt="Virtualenv Logo" style="width: 17px; height: auto; margin-right: 10px;">
+        <span style="flex: 1;">Virtualenv</span>
+    </li>
 </ul>
-
 <h2>Instalasi</h2>
 
 <h3>1. Clone Repositori</h3>
@@ -60,7 +68,7 @@ CREATE TABLE tb_produk (
 
 <h3>6. Menjalankan Aplikasi</h3>
 <p>Jalankan aplikasi Flask dengan perintah berikut:</p>
-<pre><code>python app.py</code></pre>
+<pre><code>python app.py  ATAU  flask run</code></pre>
 
 <p>Aplikasi akan berjalan di <a href="http://127.0.0.1:5000" target="_blank">http://127.0.0.1:5000</a>.</p>
 
@@ -101,7 +109,7 @@ CREATE TABLE tb_produk (
 <h2>Lisensi</h2>
 <p>Proyek ini dilisensikan di bawah <a href="LICENSE">MIT License</a>.</p>
 
-<a href="https://github.com/username/nama-repositori" class="button">Lihat Repositori di GitHub</a>
+<a href="https://github.com/ZidanAlfianMubarok/Pemrograman-Web-Praktikum" class="button">Lihat Repositori di GitHub</a>
 
 </body>
 </html>
