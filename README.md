@@ -37,6 +37,9 @@ Di bawah ini adalah struktur dari setiap bab yang disertai dengan file latihan d
 - **6.4 Latihan**: [restclient](./laragon/bin/apache/htdocs/restclient)
 - **6.5 Tugas**: [restclient](./laragon/bin/apache/htdocs/restclient)
 
+### **RESPONSI**: Aplikasi CRUD
+- **Tugas**: [Responsi](./responsi)
+
 ### **BAB VII**: Instalasi Dan Konfigurasi Rest Api
 - **7.4 Latihan**: [restflask](./restflask)
 - **7.5 Tugas**: [restapi](./restapi)

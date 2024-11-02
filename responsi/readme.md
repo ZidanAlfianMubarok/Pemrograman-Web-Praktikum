@@ -1,66 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>README - Aplikasi Statistik Barang Masuk</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        h1, h2, h3 {
-            color: #0056b3;
-        }
-        h1 {
-            font-size: 2em;
-            text-align: center;
-        }
-        h2, h3 {
-            border-bottom: 2px solid #0056b3;
-            padding-bottom: 5px;
-            margin-top: 1.5em;
-        }
-        p, li {
-            line-height: 1.6;
-        }
-        pre {
-            background-color: #eee;
-            padding: 10px;
-            border-radius: 5px;
-            overflow-x: auto;
-        }
-        code {
-            background-color: #eee;
-            padding: 2px 5px;
-            border-radius: 3px;
-            font-family: Consolas, 'Courier New', monospace;
-            color: #d63384;
-        }
-        ul, ol {
-            padding-left: 20px;
-        }
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 1em;
-            color: #fff;
-            background-color: #0056b3;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-        .button:hover {
-            background-color: #003366;
-        }
-    </style>
-</head>
-<body>
 
-<h1>Aplikasi Statistik Barang Masuk</h1>
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/9acb784d-f602-4849-a5a8-cce353c00b79" alt="Foto Anda" style="width: 120px; height: auto;">
+    <img src="https://github.com/user-attachments/assets/d7a368a5-4bb7-4ff5-ba17-febe0494bcdf" alt="Foto Anda" style="width: 500px; height: auto;">
+    <img src="https://github.com/user-attachments/assets/cfeda754-9779-4bf5-89da-9d122f662dfa" alt="Foto Anda" style="width: 120px; height: auto;">
+</p>
+
+<h1>Aplikasi Kelola Barang</h1>
 
 <p>Aplikasi ini adalah sebuah sistem berbasis web menggunakan <strong>Flask</strong> dan <strong>MySQL</strong> untuk mengelola data barang masuk. Aplikasi mencakup fitur <strong>CRUD</strong> dan tampilan statistik barang masuk secara harian dan bulanan.</p>
 
@@ -72,12 +17,20 @@
 </ul>
 
 <h2>Persyaratan</h2>
-<ul>
-    <li>Python 3.x</li>
-    <li>MySQL</li>
-    <li>Virtualenv</li>
+<ul style="list-style-type: none; padding: 0;">
+    <li style="display: flex; align-items: center; margin-bottom: 10px;">
+        <img src="https://www.python.org/static/img/python-logo@2x.png" alt="Python Logo" style="width: 80px; height: auto; margin-right: 10px;">
+        <span style="flex: 1;">3.12.1 atau di atasnya</span>
+    </li>
+    <li style="display: flex; align-items: center; margin-bottom: 10px;">
+        <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL Logo" style="width: 40px; height: auto; margin-right: 10px;">
+        <span style="flex: 1;">MySQL</span>
+    </li>
+    <li style="display: flex; align-items: center; margin-bottom: 10px;">
+        <img src="https://th.bing.com/th?id=ODLS.d766d530-29c4-4ac0-baec-2097804c4549&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2" alt="Virtualenv Logo" style="width: 17px; height: auto; margin-right: 10px;">
+        <span style="flex: 1;">Virtualenv</span>
+    </li>
 </ul>
-
 <h2>Instalasi</h2>
 
 <h3>1. Clone Repositori</h3>
@@ -85,11 +38,11 @@
 cd nama-repositori</code></pre>
 
 <h3>2. Buat dan Aktifkan Virtual Environment</h3>
-<pre><code>python -m venv venv</code></pre>
+<pre><code>python -m venv myenv</code></pre>
 <p>Aktifkan virtual environment:</p>
 <ul>
-    <li><strong>Windows:</strong> <code>venv\Scripts\activate</code></li>
-    <li><strong>MacOS/Linux:</strong> <code>source venv/bin/activate</code></li>
+    <li><strong>Windows:</strong> <code>myenv\Scripts\activate</code></li>
+    <li><strong>MacOS/Linux:</strong> <code>source myenv/bin/activate</code></li>
 </ul>
 
 <h3>3. Instal Dependensi</h3>
@@ -120,7 +73,7 @@ CREATE TABLE tb_produk (
 
 <h3>6. Menjalankan Aplikasi</h3>
 <p>Jalankan aplikasi Flask dengan perintah berikut:</p>
-<pre><code>python app.py</code></pre>
+<pre><code>python app.py  ATAU  flask run</code></pre>
 
 <p>Aplikasi akan berjalan di <a href="http://127.0.0.1:5000" target="_blank">http://127.0.0.1:5000</a>.</p>
 
@@ -151,6 +104,7 @@ CREATE TABLE tb_produk (
 <ul>
     <li><strong>Koneksi Database Gagal:</strong> Periksa kredensial MySQL di <code>config.py</code> dan pastikan server MySQL aktif.</li>
     <li><strong>Error Lainnya:</strong> Pastikan semua dependensi terinstal di virtual environment yang aktif.</li>
+    <li><strong> ⚠️ Jika Tetap Error:</strong> Coba introspeksi diri anda .</li>
 </ul>
 
 <h2>Menonaktifkan Virtual Environment</h2>
@@ -160,7 +114,7 @@ CREATE TABLE tb_produk (
 <h2>Lisensi</h2>
 <p>Proyek ini dilisensikan di bawah <a href="LICENSE">MIT License</a>.</p>
 
-<a href="https://github.com/username/nama-repositori" class="button">Lihat Repositori di GitHub</a>
+<a href="https://github.com/ZidanAlfianMubarok/Pemrograman-Web-Praktikum" class="button">Lihat Repositori di GitHub</a>
 
 </body>
 </html>
