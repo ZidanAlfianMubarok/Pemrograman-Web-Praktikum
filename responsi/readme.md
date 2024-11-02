@@ -1,4 +1,7 @@
 
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/54c78825-9680-475f-a2cc-e4c4eaebf8fb" alt="Foto Anda" style="width: 500px; height: auto;">
+</p>
 
 <h1>Aplikasi Kelola Barang</h1>
 
