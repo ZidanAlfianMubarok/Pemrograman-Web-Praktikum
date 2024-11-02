@@ -1,11 +1,22 @@
 //<!-- Script Toggle Mode -->
+// Script Toggle Mode
 const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
+const body = document.body;
+const themeIcon = document.getElementById('theme-icon');
 
-        themeToggle.addEventListener('click', () => {
-            body.classList.toggle('dark');
-            themeToggle.classList.toggle('dark');
-        });
+themeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark');
+    themeToggle.classList.toggle('dark');
+
+    // Ganti ikon berdasarkan mode
+    if (body.classList.contains('dark')) {
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon'); // Ganti ikon menjadi bulan
+    } else {
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun'); // Kembali ke ikon matahari
+    }
+});
 
 
 //partikel smtr
@@ -90,3 +101,4 @@ document.addEventListener("DOMContentLoaded", function() {
         swal("Berhasil!", "Produk berhasil ditambahkan!", "success");
     }
 });
+

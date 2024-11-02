@@ -24,12 +24,12 @@ body {
     color: #007aff;
 }
 .ios-button {
-    background-color: #007aff;
+    background: linear-gradient(to right, #5ac8fa, #007aff);
     color: white;
-    font-weight: 500;
-    border-radius: 12px;
-    padding: 10px 16px;
-    transition: all 0.3s ease;
+    border-radius: 15px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    transition: transform 0.1s ease-in-out;
 }
 .ios-button:hover {
     background-color: #005bb5;

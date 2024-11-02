@@ -29,30 +29,56 @@
             z-index: -1;
         }
         .toggle-button {
-            position: relative;
-            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Memisahkan ikon bulan dan matahari */
+            width: 50px; /* Sesuaikan lebar toggle button */
             height: 25px;
             background-color: #ccc;
             border-radius: 25px;
             cursor: pointer;
             transition: background-color 0.3s;
+            padding: 0 5px; /* Tambahkan padding horizontal */
         }
-        .toggle-button .toggle-circle {
-            position: absolute;
-            top: 2px;
-            left: 2px;
-            width: 21px;
-            height: 21px;
-            background-color: white;
-            border-radius: 50%;
-            transition: all 0.3s;
+        
+        .toggle-button i {
+            color: #333; /* Warna ikon dalam mode terang */
+            transition: color 0.3s;
+            font-size: 1.2rem; /* Ukuran ikon */
         }
+        
+        /* Menambahkan margin untuk ikon matahari agar agak ke kanan */
+        #theme-icon-sun {
+            margin-left: 5px; /* Sesuaikan margin sesuai kebutuhan */
+        }
+        
+        /* Gaya untuk mode gelap */
         .dark .toggle-button {
-            background-color: #3182ce;
+            background-color: #3182ce; /* Warna latar belakang toggle di mode gelap */
         }
-        .dark .toggle-circle {
-            transform: translateX(25px);
+        
+        .dark .toggle-button i {
+            color: #cbd5e0; /* Warna ikon dalam mode gelap */
         }
+        
+        .dark .toggle-button #theme-icon-sun {
+            display: block; /* Tampilkan ikon matahari di mode gelap */
+        }
+        
+        .dark .toggle-button #theme-icon-moon {
+            display: none; /* Sembunyikan ikon bulan di mode gelap */
+        }
+        
+        /* Tampilkan ikon bulan di mode terang */
+        .toggle-button #theme-icon-moon {
+            display: block; /* Tampilkan ikon bulan di mode terang */
+        }
+        
+        /* Sembunyikan ikon matahari di mode terang */
+        .toggle-button #theme-icon-sun {
+            display: none; /* Sembunyikan ikon matahari di mode terang */
+        }
+        
 /* style.css */
 
 /* Animasi untuk ikon trash */
