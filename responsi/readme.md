@@ -1,6 +1,7 @@
+
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/bbb0070c-57e7-433e-9f89-37a489830e45" alt="Foto Anda" style="width: 120px; height: auto;">
-    <img src="https://github.com/user-attachments/assets/54c78825-9680-475f-a2cc-e4c4eaebf8fb" alt="Foto Anda" style="width: 500px; height: auto;">
+    <img src="https://github.com/user-attachments/assets/9acb784d-f602-4849-a5a8-cce353c00b79" alt="Foto Anda" style="width: 120px; height: auto;">
+    <img src="https://github.com/user-attachments/assets/d7a368a5-4bb7-4ff5-ba17-febe0494bcdf" alt="Foto Anda" style="width: 500px; height: auto;">
     <img src="https://github.com/user-attachments/assets/cfeda754-9779-4bf5-89da-9d122f662dfa" alt="Foto Anda" style="width: 120px; height: auto;">
 </p>
 
