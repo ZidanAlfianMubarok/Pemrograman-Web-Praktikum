@@ -90,9 +90,7 @@ Di bawah ini adalah struktur dari setiap bab yang disertai dengan file latihan d
 - Setiap bab memiliki file latihan dan tugas yang diimplementasikan dengan pendekatan berbeda, sehingga dapat mempelajari berbagai aspek pengembangan aplikasi web.
 - Pastikan untuk menjalankan environment development sebelum memulai proyek.
 
-## 🤝 Kontribusi
 
-SORRY DOES NOT ACCEPT CONTRIBUTIONS ONLY ACCEPT FEEDBACK🙋🏻‍♂️
 ---
 
 ⚠️ Repository ini diPeruntukkan untuk matkul **Pemrograman Web praktik II**! 🎉
